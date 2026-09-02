@@ -1,24 +1,20 @@
 [app]
-
-title = Optimus Jarvis Super Frame
+title = Optimus Jarvis
 package.name = optimusjarvis
-package.domain = org.optimus.jarvis
-
+package.domain = org.test
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
-source.include_patterns = *.py,*.json,*.sh
-
-version = 1.0
-
-requirements = kivy
-
+version = 0.1
+requirements = python3,kivy
 orientation = portrait
-android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,CAMERA,RECORD_AUDIO
+osx.kivy_version = 2.0.0
+fullscreen = 0
+android.permissions = INTERNET
 android.api = 33
 android.minapi = 21
-android.service = False
+android.ndk = 25b
+android.accept_sdk_license = True
 
 [buildozer]
 log_level = 2
-build_dir = .buildozer
-bin_dir = ./bin
+warn_on_root = 1
