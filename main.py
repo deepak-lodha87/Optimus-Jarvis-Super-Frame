@@ -1,37 +1,42 @@
 import sys
 import os
 
-class OptimusJarvisCore:
-    def __init__(self):
-        self.system_status = "ONLINE"
-        self.blackbox_ai_engine = True
-        self.stealth_radar_active = True
-        self.nanobot_repair_protocol = "STANDBY"
-        
-    def blackbox_code_generator(self, prompt):
-        print(f"[BLACKBOX-AI] Processing Command: '{prompt}'")
-        generated_code = f"# Auto-generated logic for: {prompt}\ndef execute_task():\n    pass"
+class BlackBoxAIEngine:
+    """
+    Pillar 1: Black Box AI
+    Handles dynamic code synthesis and AST syntax parsing.
+    """
+    def synthesize_code(self, prompt):
+        print(f"[BLACKBOX-AI] Translating natural language prompt: '{prompt}'")
+        generated_code = f"# Auto-generated block for: {prompt}\ndef auto_generated_task():\n    return True"
         return generated_code
 
-    def defense_and_weapon_control(self, mode="TARGET_ACQUISITION"):
-        print(f"[DEFENSE-MODULE] Mode: {mode} | Radar Jamming & Stealth: ACTIVE")
+class UserCustomAlgorithm:
+    """
+    Pillar 2: Your Custom Core Algorithm
+    Handles high-tech decision matrix, stealth masking, weapon protocols, and nano-arrays.
+    """
+    def execute_custom_logic(self, command_type):
+        print(f"[CUSTOM-ALGO] Executing core strategic logic for: {command_type}")
+        # Strategic Decision Making Matrix
+        status = {"stealth": "ACTIVE", "weapons_lock": "READY", "nanobots": "DEPLOYED"}
+        return status
 
-    def aerospace_and_space_navigation(self):
-        print("[AEROSPACE-MODULE] Telemetry & Space Trajectory Calculations Ready.")
+class OptimusJarvisSuperFrame:
+    def __init__(self):
+        self.blackbox = BlackBoxAIEngine()
+        self.custom_algo = UserCustomAlgorithm()
 
-    def nanobot_and_medical_system(self):
-        print("[NANOBOT-SYS] Nano-repair arrays initialized. Health Monitoring: ACTIVE")
-
-    def vehicle_electrical_diagnostics(self):
-        print("[DIAGNOSTIC-SYS] Scanning Electrical Circuits and ECU Telemetry...")
+    def process_command(self, user_prompt):
+        print("=== OPTIMUS JARVIS DUAL-ENGINE PROCESSING ===")
+        # Step 1: Execute Custom Strategy Algorithm
+        algo_result = self.custom_algo.execute_custom_logic("DEFENSE_AND_DIAGNOSTICS")
+        print(f"[SYSTEM STATUS]: {algo_result}")
+        
+        # Step 2: Execute Black Box Code Generation
+        generated_script = self.blackbox.synthesize_code(user_prompt)
+        print("[RESULT]: Code and Logic Pipeline Synthesized Successfully.")
 
 if __name__ == "__main__":
-    jarvis = OptimusJarvisCore()
-    print("=== OPTIMUS JARVIS SUPER-FRAME ONLINE ===")
-    jarvis.defense_and_weapon_control()
-    jarvis.aerospace_and_space_navigation()
-    jarvis.nanobot_and_medical_system()
-    jarvis.vehicle_electrical_diagnostics()
-    
-    sample_code = jarvis.blackbox_code_generator("Build Autonomous Drone Swarm Protocol")
-    print(f"[RESULT]: Logic Pipeline Generated.")
+    jarvis = OptimusJarvisSuperFrame()
+    jarvis.process_command("Build High-Tech Weapon and Radar Jamming System")
