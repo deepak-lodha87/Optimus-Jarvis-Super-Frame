@@ -28,11 +28,9 @@ jobs:
         pip install --upgrade pip
         pip install cython==0.29.33 buildozer kivy
 
-    - name: Accept Android Licenses & Build APK
+    - name: Build APK Cleanly
       run: |
-        mkdir -p ~/.android
-        touch ~/.android/repositories.cfg
-        yes | buildozer -v android debug
+        buildozer --accept-sdk-license -v android debug
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
