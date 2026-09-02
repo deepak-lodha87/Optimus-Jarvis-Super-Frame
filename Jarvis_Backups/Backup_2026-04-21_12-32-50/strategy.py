@@ -1,0 +1,1 @@
+print('Strategic Planning Module Online.')

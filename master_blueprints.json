@@ -1,0 +1,23 @@
+{
+    "AEROSPACE": {
+        "Drone_AX1": {
+            "Propulsion": "Electric",
+            "Endurance": "45m",
+            "Payload": "2kg"
+        },
+        "Fighter_Jet": {
+            "Engine": "Turbo-Fan",
+            "Max_Speed": "Mach 2.0"
+        }
+    },
+    "VEHICLES": {
+        "Electric_Bike": {
+            "Battery": "72V Li-ion",
+            "Range": "150km"
+        },
+        "Submarine": {
+            "Depth_Rating": "500m",
+            "Oxygen": "48h"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "inventory": {
+        "ration_days": 0,
+        "cash_reserve": 0,
+        "essentials": []
+    },
+    "blueprints": [
+        "Fighter Jet",
+        "Submarine",
+        "Engine_Repair"
+    ],
+    "last_update": "2026-03-24 12:39:51.030407",
+    "offline_notes": [],
+    "strategy": "Passive"
+}

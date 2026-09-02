@@ -1,0 +1,11 @@
+{
+    "MATERIALS": {
+        "Graphene_Web": "High conductivity, 200x stronger than steel.",
+        "Nano_Titanium": "Self-healing alloy for Exoskeleton suits.",
+        "Carbon_Fiber_V2": "Heat resistant, ultra-lightweight."
+    },
+    "BIOMECHANICS": {
+        "Neural_Link": "Signal speed: 0.02ms for suit control.",
+        "Exo_Joints": "Hydraulic-Electric hybrid with 5000Nm torque."
+    }
+}

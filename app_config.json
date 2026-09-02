@@ -1,0 +1,11 @@
+{
+    "app_name": "Optimus Jarvis",
+    "package_id": "com.optimus.jarvis.sovereign",
+    "owner": "Master Deepak",
+    "icon_style": "Neon Crystal Hexagon Core",
+    "permissions": [
+        "BLUETOOTH",
+        "WIFI",
+        "HARDWARE_BIOMETRIC"
+    ]
+}

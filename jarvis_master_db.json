@@ -1,0 +1,28 @@
+{
+    "Status": "PHASE_104_OMEGA_ACTIVE",
+    "Survival": {
+        "cash": 5000.0,
+        "ration_days": 30,
+        "water": "50L"
+    },
+    "Military_Blueprints": {
+        "Rafale": "Omnirole fighter, AESA Radar, Meteor missiles.",
+        "T-90 Bhishma": "Main battle tank, 125mm Smoothbore gun.",
+        "S-400": "Surface-to-air missile system, 400km range.",
+        "Fighter Jets": "Blueprints for F-22, Su-57, and Tejas Mk2 included.",
+        "Submarines": "Autonomous navigation and electrical power train specs."
+    },
+    "Suits_Engineering": {
+        "Iron Man": "Biomechanical control, Exoskeleton blueprints, Arc Reactor specs.",
+        "Spider-Man": "Nano-engineering fabric, Integrated HUD systems."
+    },
+    "Advanced_Tech": {
+        "Nano-Engineering": "Medical data and molecular repair modules.",
+        "Generative Design": "Aerospace & Jet turbine optimization (Phase 8).",
+        "Precision": "Czinger 21C style structural integrity specs."
+    },
+    "Intelligence": {
+        "Strategy": "Captain America Strategic Framework (Super-Frame).",
+        "Recognition": "Landmark Scanning & Exact Location Tracking."
+    }
+}
